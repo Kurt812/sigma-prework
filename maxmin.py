@@ -10,5 +10,9 @@ def find_min_max(num_list):
             min_val = num
         if num > max_val:
             max_val = num
-    print([min_val, max_val])
     return [min_val, max_val]
+
+
+num_list = (input('Give me a list of numbers separated by commas:\n')).split(',')
+num_list = [int(num) for num in num_list]
+print(find_min_max(num_list))
